@@ -1,85 +1,206 @@
-*{
-    
+* {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h2{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-}
-.navbar{
+
+.navbar {
     /* border: solid; */
     display: flex;
     justify-content: space-around;
-    background-color: #FF2849;
+    align-items: center;
+    background-color: rgb(242, 242, 242)
 }
-.navbar a{
+
+.navbar .logo {
+    width: 50%;
+
+
+
+}
+
+.navbar .logo img {
+    /* height: 70px;
+    width: 80px; */
+    margin-left: 40px;
+    background-color: aliceblue;
+
+}
+
+.navbar a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
     padding: 1rem;
+    font-size: 20px;
+    margin: 10px;
+
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: red;
-    transition: all 3s ease;
+    transition: all 0.5s ease;
+    text-decoration: underline;
 }
+/* for all */
+.container {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+
+}
+/*  */
 /* hero section */
 /* https: //assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg */
 
 .hero {
     /* border: solid; */
-        height: 65vh;
-        background-image: url(https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg);
-        background-size: cover;
-        background-position: center;
-        background-position: top;
+    height: 65vh;
+    background-image: url(https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: top;
+    display: flex;
+    /* margin-top: 50px; */
+
+
 
 }
-.hero .hero-content{
-    /* border: solid; */
-    
+
+.hero .hero-content {
+
     height: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+    margin-top: 50px;
+    padding-left: 50px;
+
+
 }
-.hero .hero-content h1{
-    color: rgb(18, 18, 18);
+
+.hero .hero-content h1 {
+    color: rgb(16, 16, 16);
     font-size: 3rem;
-   text-align: left;
-   margin-left: 100px;
+
 }
-.hero .hero-content p{
-    color: rgb(13, 13, 13);
+
+.hero .hero-content p {
+    color: rgb(44, 43, 43);
     font-size: 1.5rem;
-    margin-left: 100px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    
-    
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .hero .hero-content h4 {
-    color: rgb(28, 26, 26);
+    color: rgb(168, 163, 163);
     font-size: 1.5rem;
-    text-align: left;
-    margin-left: 100px;
-    margin-top: 20px;
-    font-style: oblique;
+
 }
-.hero .hero-content .btn{
+
+.hero .hero-content .btn {
     /* display: flex; */
-        justify-content: center;
-        align-items: center;
-        padding: 9px 12px;
-        gap: 8px;
-        height: 40px;
-        width: 172px;
-        border: none;
-        background: #FF2849;
-        border-radius: 20px;
-        cursor: pointer;
-        margin: 90px;
-        
+    justify-content: center;
+    align-items: end;
+    padding: 9px 12px;
+    gap: 8px;
+    height: 40px;
+    width: 172px;
+    border: none;
+    background: #ec5e1c;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 50px;
+    color: rgb(252, 253, 254);
+
+
+}
+
+.hero .hero-content .btn:hover {
+    box-shadow: 2px 2px 2px 2px;
+    background-color: gray;
+    transition: ease-out 1s;
+}
+
+/*  card section */
+.about {
+
+    background-color: #f0cccf;
+   
+}
+
+
+.card {
+    /* border: solid; */
+    width: 28%;
+    height: 300px;
+    margin: 20px;
+    background-color: rgb(252, 253, 254);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+/* contact */
+#contact{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* flex-direction: row; */
+    justify-content: center;
+
+}
+.contact-item {
+    width: 48%;
+    margin: 100px;
+    justify-content: space-between;
+   
+}
+.important{
+   
+    background-color: #ec5e1c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.highlight-box{
+  
+    background-color: #ec5e1c;
+    padding: 40px;
+    font-style: italic;
     
+}
+.contact .text-section  p{
+   justify-content: space-between;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-style: italic;
+}
+
+
+.booknow{ 
+    justify-content: center;
+    align-items: end;
+    padding: 7px 12px;
+    gap: 6px;
+    height: 40px;
+    width: 172px;
+    border: none;
+    background: #ec5e1c;
+    border-radius: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    
+}
+.contact-item button{
+    font-size: 20px;
+    margin-top: 0px;
+    color: rgb(21, 22, 22);
+    border: none;
 }
