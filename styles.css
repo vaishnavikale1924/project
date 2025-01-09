@@ -204,3 +204,42 @@ flex-wrap: wrap;
     color: rgb(21, 22, 22);
     border: none;
 }
+.class .contact{
+    border: solid;
+}
+.img-item{
+margin-left: 90px;
+}
+.img-item2{
+   
+    width: 38%;
+    height: 400px;
+    margin: 0px;
+    margin-top: 0px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding: 20px;
+   background-image: url(contact\ us.jpg);
+}
+
+h6{
+   justify-content: center; 
+   display: flex;
+   font-size: 90px;
+   margin-top: 20px;
+   background-color: aliceblue;
+   font-style: italic;
+
+}
+.form button{
+    border: solid wheat;
+    background-color: black;
+    color: azure;
+    height: 40px;
+    width: 60px;
+    border-radius: 20px;
+}
