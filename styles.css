@@ -243,3 +243,64 @@ h6{
     width: 60px;
     border-radius: 20px;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      width: 45%;
+    }
+  
+    .hero {
+      padding: 50px;
+    }
+  
+    .hero-title {
+      font-size: 2.3em;
+    }
+  
+    .hero-text {
+      font-size: 1.1em;
+    }
+  
+    .img-item img {
+      width: 45%;
+    }
+  }
+  
+  /* For large desktops (min-width: 1025px) */
+  @media screen and (min-width: 1025px) {
+    .navbar {
+      justify-content: space-between;
+    }
+  
+    .hero {
+      padding: 80px;
+    }
+  
+    .hero-title {
+      font-size: 3em;
+    }
+  
+    .hero-text {
+      font-size: 1.3em;
+    }
+  
+    .about {
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      width: 30%;
+    }
+  
+    .img-item img {
+      width: 48%;
+    }
+  
+    .contact {
+      padding: 40px;
+    }
+  }
